@@ -29,3 +29,8 @@ Run the image with:
 Then upload a zip file containing the resources (DMN, BPMN, etc)
 
 - `curl -X POST -H "Content-Type: multipart/form-data" -F "myFile=@<ABSOLUTE_PATH_TO_YOUR_FILE>" 'http://localhost:8080/upload?apiKey=dev'`
+
+## Dev Deployment Custom Image parameters
+
+- Docker Image: `quay.io/thiagoelg/dev-deployment-kogito-blank-app-with-dev-ui:latest`
+- Command: `./init.sh`
