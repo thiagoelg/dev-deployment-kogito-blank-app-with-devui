@@ -1,4 +1,6 @@
 kogito-blank-app/target
 kogito-blank-app/.flattened-pom.xml
 kogito-blank-app/*.swidtag
+kogito-blank-app/mvnw
+kogito-blank-app/mvnw.cmd
 node_modules
