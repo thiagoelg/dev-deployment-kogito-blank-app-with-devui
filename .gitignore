@@ -1,3 +1,4 @@
 kogito-blank-app/target
 kogito-blank-app/.flattened-pom.xml
+kogito-blank-app/*.swidtag
 node_modules
