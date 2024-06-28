@@ -167,6 +167,10 @@
     <!-- DevUI -->
     <dependency>
       <groupId>org.jbpm</groupId>
+      <artifactId>jbpm-quarkus-devui-deployment</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.jbpm</groupId>
       <artifactId>jbpm-quarkus-devui</artifactId>
       <scope>provided</scope>
     </dependency>

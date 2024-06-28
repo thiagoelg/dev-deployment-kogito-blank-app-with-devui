@@ -13,7 +13,7 @@ COPY --chown=$USER_ID:$USER_ID kogito-blank-app $HOME_PATH/app/
 RUN sed -i -e "s|http://localhost:9000|http://${BAMOE_MAVEN_REPO_URL}|" $HOME_PATH/app/settings.xml
 
 # Pre-populate local Maven repository for faster startup
-RUN ./mvnw clean package -B -Dmaven.test.skip -Dmaven.repo.local=/tmp/kogito/.m2/repository -Dquarkus.http.non-application-root-path=${ROOT_PATH}/q -Dquarkus.http.root-path=${ROOT_PATH} \
+RUN ./mvnw clean package -Dmaven.test.skip -Dmaven.repo.local=/tmp/kogito/.m2/repository -Dquarkus.http.non-application-root-path=${ROOT_PATH}/q -Dquarkus.http.root-path=${ROOT_PATH} \
   && chgrp -R 0 $HOME_PATH/app && chmod -R g=u $HOME_PATH/app && chgrp -R 0 /tmp/kogito && chmod -R g=u /tmp/kogito && chgrp -R 0 /.m2 && chmod -R g=u /.m2
 
 USER $USER_ID
